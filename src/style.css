@@ -14,16 +14,23 @@
 
 body {
   font-family: "Playfair Display", serif;
-  background-color: var(--tango-cream);
+
   color: var(--tango-black);
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url("../background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 header {
-  background-color: var(--tango-black);
   color: var(--tango-cream);
   padding: 2rem;
   text-align: center;
@@ -33,7 +40,7 @@ h1 {
   color: var(--tango-gold);
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  text-transform: uppercase;
+
   letter-spacing: 2px;
 }
 
