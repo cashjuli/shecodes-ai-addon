@@ -23,11 +23,11 @@ body {
   background-image: url("../background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: black;
 }
 
 .container {
   background-color: rgba(0, 0, 0, 0.9);
+  flex: 1;
 }
 
 header {
@@ -103,6 +103,9 @@ footer {
   color: var(--tango-cream);
   text-align: center;
   padding: 1rem;
+
+  bottom: 0;
+  width: 100%;
 }
 
 a {
