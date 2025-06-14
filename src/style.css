@@ -60,7 +60,6 @@ main {
 form {
   display: flex;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
 
 input[type="text"] {
@@ -70,6 +69,28 @@ input[type="text"] {
   border-radius: 4px;
   font-size: 1rem;
   font-family: inherit;
+}
+
+label {
+  display: block;
+
+  color: var(--tango-cream);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+/* Add focus styles for better accessibility */
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--tango-gold);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+/* Add focus-visible styles for keyboard navigation */
+input[type="text"]:focus-visible {
+  outline: 2px solid var(--tango-gold);
+  outline-offset: 2px;
 }
 
 input[type="submit"] {
@@ -130,4 +151,8 @@ a:hover {
   input[type="submit"] {
     width: 100%;
   }
+}
+
+.hidden {
+  display: none;
 }
